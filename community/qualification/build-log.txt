@@ -1,13 +1,12 @@
-AEGLYSAI – BUILD AND TEST LOG
+AEGLYSAI QUALIFICATION BUILD LOG
 
 Environment:
-- Operating System: Windows
+- OS: Windows
 - .NET SDK: 8.x
-- Git Version: 2.56.0
+- Git: 2.56.0
 
-Test Execution:
-- Command: dotnet test
-- Experiment Tests: 4 Passed, 0 Failed
+.NET Test Results:
+- Experiments Tests: 4 Passed, 0 Failed
 - Integration Tests: 93 Passed, 0 Failed
 - Total: 97 Passed, 0 Failed, 0 Skipped
 
@@ -15,9 +14,16 @@ API Startup:
 - Command: dotnet run --project src/AeglysAI.Api -- --urls http://localhost:5080
 - Result: Application started successfully.
 - Listening URL: http://localhost:5080
-- Hosting Environment: Production
 
 Docker Quick Start:
-- Not yet validated.
+- ./dev up: Successfully executed
+- ./dev health: Successfully executed
+- ./dev demo: Successfully executed
+- ./dev logs: Successfully executed
+- ./dev test: Successfully executed
+- ./dev experiment my-smoke: Successfully executed
+- ./dev down: Successfully executed
+
+Docker development workflow completed.
 
 No credentials or secrets are included in this log.
